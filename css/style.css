@@ -1,0 +1,323 @@
+/*  FONT FAMILY in use
+font-family: 'Prompt', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Code Pro', monospace; */
+
+@import url(./fonts.css);
+
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root {
+    /* font-family themes */
+    --Roboto: "Roboto", sans-serif;
+    --Prompt: "Prompt", sans-serif;
+    --Code: "Source Code Pro", monospace;
+
+    /* theme colours */
+    --text-white: #ede7e3;
+    --text-mid-blue: #82c0cc;
+    --bg-flame: #f05d23;
+    --bg-pac-blue: #489fb5;
+    --bg-jet: #373737;
+    --bg-dark: #131313;
+
+    /* gradient colours */
+    --grad-grey-black: background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+    --grad-dark: background-image: linear-gradient(to right, #434343 0%, black 100%);
+    --grad-blues: background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+
+
+/* ---------------Global Class----------------- */
+body {
+    background: var(--bg-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-white);
+}
+
+p {
+    color: var(--text-white);    
+}
+
+h1 {
+    font-family: var(--Code);
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-decoration: none;
+    color: var(--bg-flame);
+}
+
+h3 {
+    font-family: var(--Prompt);
+    font-size: 1.3rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button.button {
+    border:var(--text-white) 1px;
+    border-style: solid;
+    border-radius: 2rem;
+    padding: 1rem, 3rem;
+    font-size: 1.4rem;
+    font-family: var(--Code);
+    cursor: pointer;
+}
+
+span {
+    font-family: var(--Roboto);
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+/* -----xxx-------Global Class--------xxx------ */
+
+/* ---------------Navigation----------------- */
+
+.nav {
+    background: var(--bg-jet);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 7vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--text-white);
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Prompt);
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--bg-flame);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: var(--grad-dark);
+}
+.nav .nav-brand a {
+    font-size: 1.9rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Code);
+    color: var(--text-white);
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+}
+
+.nav .social i {
+    padding: 0 .2rem;
+    font-size: 1.1rem;
+}
+
+.nav .social i:hover {
+    color: var(--bg-flame);
+}
+/* -----xxx-------Navigation--------xxx------ */
+
+
+/* ---------------Main index.html----------------- */
+
+main.index-html .site-title {
+    background: url(../images/cyber.jpeg);
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+main.index-html .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--text-white)
+}
+
+main.index-html .site-title h1, h3 {
+    margin: .3rem;
+}
+
+main.index-html .site-title .button {
+    margin: 1.8rem;
+    background: var(--bg-pac-blue)
+}
+
+main.index-html .site-title .button:hover {
+    background: transparent;
+    border: 1px solid var(--text-mid-blue);
+    color: var(--text-white);
+}
+
+
+/* -----xxx-------Main index.html--------xxx------ */
+
+
+/* ---------------Main blog.html----------------- */
+
+main.blog-html .blog {
+    background: url(../images/red-smoke-cyber.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 90vh;
+    width: 100%;
+    background-size: 100%;
+}
+
+main.blog-html .blog .blog-post {
+    padding-top: 11rem;
+}
+
+main.blog-html .blog-post .blog-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0, 0, 0.5);
+    border: solid 1px var(--bg-flame);
+    background: rgba(255,255, 255, 0.4)
+}
+
+main.blog-html .blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+main.blog-html .blog-content .button-blog {
+    padding: .7rem 2rem;
+    background: var(--bg-pac-blue);
+    margin: .5rem;
+}
+
+main.blog-html .blog-content span {
+    display: block;
+}
+
+main.blog-html section .container .owl-nav {
+    position: absolute;
+    top: 20%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main.blog-html .owl-nav .owl-prev .owl-nav-prev,
+main.blog-html .owl-nav .owl-next .owl-nav-next {
+    color: var(--bg-pac-blue);
+    background: rgba(255,255, 255, 0.2);
+    font-size: 1.5rem;
+}
+
+main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
+    background: rgba(255,255, 255, 0.5);
+    color: var(--bg-jet);
+}
+
+
+
+/* -----xxx-------Main blog.html--------xxx------ */
+
+
+
+
+
+/* ---viewport less than or equal to 700px --- */
+
+@media only screen and (max-width: 700px) {
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column; 
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+/* ---viewport less than or equal to 600px --- */
+
+
+/* ---- Scroll Bar ---- */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--bg-jet);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:var(--bg-flame);
+  }
+  
+/* Scroll button  */
+  ::-webkit-scrollbar-button {
+    background: var(--bg-pac-blue);
+  }
+
+  /* Scroll button  hover*/
+::-webkit-scrollbar-button:hover {
+    background: var(--text-mid-blue)
+  }
+  /* -xx- Scroll Bar -xx- */

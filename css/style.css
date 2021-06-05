@@ -45,7 +45,7 @@ a {
 
 p {
     color: var(--text-white);
-    font-family: var(--Roboto);
+    font-family: var(--Prompt);
 }
 
 h1 {
@@ -101,8 +101,9 @@ span {
 .nav {
     background: var(--bg-jet);
     padding: 0 2rem;
+    padding-top: 0.7rem;
     height: 0rem;
-    min-height: 7vh;
+    min-height: 8vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -181,6 +182,14 @@ span {
 
 /* -----XXX-------Navigation--------XXX------ */
 
+/* ---------------Header----------------- */
+
+header.header .page-title {
+    padding: 1rem 3rem;
+    margin-left: 5rem;
+}
+/* -----XXX-------Header--------XXX------ */
+
 /* ---------------Main index.html----------------- */
 
 main.index-html .site-title {
@@ -235,12 +244,12 @@ main.index-html .site-content p {
 /* --- Carousel/Gallery --- */
 
 main.bio-html .bio {
-    background: url(../images/tie.jpeg);
+    background: url(../images/tie_75_tran.png);
     background-repeat: no-repeat;
-    background-position: right;
-    height: 90vh;
+    background-position: center;
+    height: 99vh;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 
 main.bio-html .bio .bio-post {
@@ -459,6 +468,12 @@ main.blog-html .post-content .post-title a:hover {
 .secret-html .secret {
     padding-left: 3rem;
     padding-top: 3rem;
+    background: url(../images/code-skeleton_75_tran.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
 }
 
 .secret-html .secret h2 {
@@ -592,8 +607,8 @@ footer.footer .nav-up span:hover {
 }
 /* ---viewport less than or equal to 1200px --- */
 
-/* ---viewport less than or equal to 750px --- */
-@media only screen and (max-width: 850px) {
+/* ---viewport less than or equal to 850px --- */
+@media only screen and (max-width: 800px) {
     .nav .nav-menu,
     .nav .nav-items {
         flex-direction: column;
@@ -601,10 +616,6 @@ footer.footer .nav-up span:hover {
 
     .nav .toggle-collapse {
         display: initial;
-    }
-
-    footer.footer .container {
-        grid-template-columns: repeat(1, 1fr);
     }
 
     main.blog-html .site-content {
@@ -615,13 +626,38 @@ footer.footer .nav-up span:hover {
     main.blog-html .site-content .sidebar .popular-post {
         display: none;
     }
+
+    footer.footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer.footer .copyright {
+        font-size: 0.8rem;
+    }
+    .nav .nav-brand a {
+        font-size: 1.7rem;
+    }
+    .nav {
+        min-height: 9vh;
+    }
 }
 
-/* ---viewport less than or equal to 600px --- */
+/* ---viewport less than or equal to 850px --- */
 
-/* ---- Side Window Scroll Bar ---- */
+/* ---viewport less than or equal to 450px --- */
+@media only screen and (max-width: 450px) {
+    main .bio {
+        height: 100vh;
+    }
 
-/* width */
+    footer.footer .copyright {
+        font-size: 0.8rem;
+    }
+}
+
+/* ---viewport less than or equal to 450px --- */
+
+/* ---- Side Window Scroll Bar ---- */ /* width */
 ::-webkit-scrollbar {
     width: 0.8rem;
 }

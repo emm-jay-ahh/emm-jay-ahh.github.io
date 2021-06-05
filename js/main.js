@@ -20,4 +20,13 @@ $(document).ready(function(){
         navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')],
     });
 
+
+    // Nav back to top button in footer   - not working - need to debug
+    // $('footer .nav-up span').click(function () {
+    //     $('html, body').animate({
+    //         scrollTop: 0
+    //     },
+    // })
+
+
 });

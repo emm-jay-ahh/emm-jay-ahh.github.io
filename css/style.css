@@ -91,7 +91,7 @@ span {
 }
 
 .text-white {
-    color: var(--bg-jet);
+    color: var(--text-white);
 }
 
 /* -----xxx-------Global Class--------xxx------ */
@@ -165,7 +165,7 @@ span {
 }
 
 .nav .social i {
-    padding: 0 0.4rem;
+    padding: 0 0.7rem;
     font-size: 1.1rem;
 }
 
@@ -495,7 +495,7 @@ footer.footer .container {
 footer.footer .container > div {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 3rem 0.9rem;
+    padding: 1.7rem 2.7rem;
 }
 
 footer.footer .container h2 {
@@ -504,9 +504,66 @@ footer.footer .container h2 {
 }
 
 footer.footer .search-sites .input-element {
-    background: var(--bg-flame);
     display: inline-block;
+    padding: 0.5rem 0.7rem;
+    width: 70%;
+    border: var(--bg-pac-blue) 1px solid;
+    background: var(--bg-dark);
+    font-family: var(--Code);
+    font-size: 0.9rem;
 }
+
+footer.footer .search-sites .input-element:hover {
+    border: var(--bg-flame) 1px solid;
+}
+
+footer.footer .search-sites input.input-element {
+    color: var(--bg-flame);
+}
+
+footer.footer .search-sites span {
+    background: var(--grad-blues);
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+}
+
+footer.footer .follow {
+    display: flexbox;
+    flex-direction: column;
+}
+
+footer.footer .follow div i {
+    font-size: 2.7rem;
+    color: var(--text-white);
+    padding: 0 0.7rem;
+}
+
+footer.footer .follow div i:hover {
+    color: var(--bg-flame);
+    cursor: pointer;
+}
+
+footer.footer .copyright {
+    font-family: var(--Roboto);
+    font-size: 1rem;
+    justify-content: center;
+}
+
+footer.footer .nav-up {
+    position: absolute;
+    right: 6%;
+    top: 40%;
+}
+
+footer.footer .nav-up span {
+    color: var(--text-white);
+}
+
+footer.footer .nav-up span:hover {
+    color: var(--bg-flame);
+    cursor: pointer;
+}
+
 /* -----XXX----- Footer ------XXX------ */
 
 /* ---viewport less than or equal to 700px --- */

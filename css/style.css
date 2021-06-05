@@ -27,16 +27,15 @@ body {
     --bg-dark: #131313;
 
     /* gradient colours */
-    --grad-grey-black: background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
-    --grad-dark: background-image: linear-gradient(to right, #434343 0%, black 100%);
-    --grad-blues: background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+    --grad-grey-black: linear-gradient(to right, #868f96 0%, #596164 100%);
+    --grad-dark: linear-gradient(to left, #333333 0%, #070707 100%);
+    --grad-blues: linear-gradient(to right, #489fb5 0%, #82c0cc 100%);
+    --grad-blugry: linear-gradient(to left, #489fb5 0%, #070707 100%);
 }
-
-
 
 /* ---------------Global Class----------------- */
 body {
-    background: var(--bg-dark);
+    background: var(--grad-dark);
 }
 
 a {
@@ -45,7 +44,8 @@ a {
 }
 
 p {
-    color: var(--text-white);    
+    color: var(--text-white);
+    font-family: var(--Roboto);
 }
 
 h1 {
@@ -55,7 +55,6 @@ h1 {
 
 h2 {
     text-decoration: none;
-    color: var(--bg-flame);
 }
 
 h3 {
@@ -74,11 +73,11 @@ ul {
 }
 
 button.button {
-    border:var(--text-white) 1px;
+    border: var(--text-white) 1px;
     border-style: solid;
     border-radius: 2rem;
-    padding: 1rem, 3rem;
-    font-size: 1.4rem;
+    padding: 1rem, 2rem;
+    font-size: 1.2rem;
     font-family: var(--Code);
     cursor: pointer;
 }
@@ -89,6 +88,10 @@ span {
 
 .container {
     margin: 0 5vw;
+}
+
+.text-white {
+    color: var(--bg-jet);
 }
 
 /* -----xxx-------Global Class--------xxx------ */
@@ -151,26 +154,25 @@ span {
 }
 .nav .nav-brand a {
     font-size: 1.9rem;
-    padding: 1rem 0;
+    padding: 1.3rem 2rem;
     display: block;
     font-family: var(--Code);
     color: var(--text-white);
 }
 
 .nav .social {
-    padding: 1.4rem 0;
+    padding: 1.7rem 2rem;
 }
 
 .nav .social i {
-    padding: 0 .2rem;
+    padding: 0 0.4rem;
     font-size: 1.1rem;
 }
 
 .nav .social i:hover {
     color: var(--bg-flame);
 }
-/* -----xxx-------Navigation--------xxx------ */
-
+/* -----XXX-------Navigation--------XXX------ */
 
 /* ---------------Main index.html----------------- */
 
@@ -185,16 +187,17 @@ main.index-html .site-title {
 main.index-html .site-title .site-background {
     padding-top: 10rem;
     text-align: center;
-    color: var(--text-white)
+    color: var(--text-white);
 }
 
-main.index-html .site-title h1, h3 {
-    margin: .3rem;
+main.index-html .site-title h1,
+h3 {
+    margin: 0.3rem;
 }
 
 main.index-html .site-title .button {
     margin: 1.8rem;
-    background: var(--bg-pac-blue)
+    background: var(--bg-pac-blue);
 }
 
 main.index-html .site-title .button:hover {
@@ -203,14 +206,29 @@ main.index-html .site-title .button:hover {
     color: var(--text-white);
 }
 
+main.index-html .site-content {
+    margin: 0.5rem 5rem;
+    padding: 1rem 1rem;
+}
 
-/* -----xxx-------Main index.html--------xxx------ */
+main.index-html .site-content h2 {
+    font-family: var(--Code);
+    color: var(--text-white);
+}
 
+main.index-html .site-content p {
+    font-family: var(--Roboto);
+    font-size: 1.3rem;
+}
 
-/* ---------------Main blog.html----------------- */
+/* -----XXX-------Main index.html--------XXX------ */
 
-main.blog-html .blog {
-    background: url(../images/red-smoke-cyber.jpeg);
+/* ---------------Main bio.html----------------- */
+
+/* --- Carousel/Gallery --- */
+
+main.bio-html .bio {
+    background: url(../images/tie.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     height: 90vh;
@@ -218,67 +236,285 @@ main.blog-html .blog {
     background-size: 100%;
 }
 
-main.blog-html .blog .blog-post {
+main.bio-html .bio .bio-post {
     padding-top: 11rem;
 }
 
-main.blog-html .blog-post .blog-content {
+main.bio-html .bio-post .bio-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 60%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0,0, 0, 0.5);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
     border: solid 1px var(--bg-flame);
-    background: rgba(255,255, 255, 0.4)
+    background: rgba(255, 255, 255, 0.4);
 }
 
-main.blog-html .blog-content .blog-title {
+main.bio-html .bio-content .bio-title {
     padding: 2rem 0;
 }
 
-main.blog-html .blog-content .button-blog {
-    padding: .7rem 2rem;
-    background: var(--bg-pac-blue);
-    margin: .5rem;
+main.bio-html .bio-content .button-bio {
+    padding: 0.7rem 2rem;
+    background: var(--grad-blues);
+    margin: 0.5rem;
 }
 
-main.blog-html .blog-content span {
+main.bio-html .bio-content span {
     display: block;
 }
 
-main.blog-html section .container .owl-nav {
+/* --- Carousel Nav left right toggle--- */
+
+main.bio-html section .container .owl-nav {
     position: absolute;
-    top: 20%;
+    top: 10%;
     margin: 0 auto;
     width: 100%;
 }
 
-main.blog-html .owl-nav .owl-prev .owl-nav-prev,
-main.blog-html .owl-nav .owl-next .owl-nav-next {
+main.bio-html .owl-nav .owl-prev .owl-nav-prev,
+main.bio-html .owl-nav .owl-next .owl-nav-next {
     color: var(--bg-pac-blue);
-    background: rgba(255,255, 255, 0.2);
-    font-size: 1.5rem;
+    background: transparent;
+    font-size: 3rem;
 }
 
-main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
-    background: rgba(255,255, 255, 0.5);
-    color: var(--bg-jet);
+main.bio-html .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+    color: var(--bg-flame);
 }
 
+main.bio-html .owl-theme .owl-nav [class*="owl-"] {
+    outline: none;
+}
 
+/* -----XXX-------Main bio.html--------XXX------ */
 
-/* -----xxx-------Main blog.html--------xxx------ */
+/* ---------------Main blog.html----------------- */
 
+main.blog-html .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 
+main.blog-html .post-content {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
+main.blog-html .site-content .post-content > .post-image,
+.post-title {
+    padding: 1rem 2rem;
+    position: relative;
+}
 
+main.blog-html .site-content .post-content > .post-image .post-info {
+    background: var(--bg-pac-blue);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+main.blog-html .site-content .post-content > .post-image > div {
+    overflow: hidden;
+}
+
+main.blog-html .site-content .post-content > .post-image .img {
+    width: 100%;
+    transition: all 1.2s ease;
+}
+
+main.blog-html .site-content .post-content > .post-image .img:hover {
+    transform: scale(1.2);
+}
+
+main.blog-html .site-content .post-content > .post-image .post-info {
+    margin: 0 0.7rem;
+}
+
+main.blog-html .post-content .post-title a {
+    font-family: var(--Prompt);
+    font-size: 1.7rem;
+}
+
+main.blog-html .post-content .post-title a:hover {
+    color: var(--bg-flame);
+}
+
+/*  -- Read More Button -- */
+.blog-html .site-content .post-content .post-title .post-button {
+    border-radius: 0;
+    padding: 0.5rem 0.8rem;
+    background: var(--bg-pac-blue);
+    color: var(--text-white);
+}
+.blog-html .site-content .post-content .post-title .post-button:hover {
+    color: var(--bg-dark);
+    background: var(--bg-flame);
+    border-color: var(--bg-pac-blue);
+}
+
+.blog-html .site-content .page-num {
+    justify-content: center;
+    color: var(--text-white);
+    margin: 4rem 0;
+}
+
+.blog-html .site-content .page-num a {
+    padding: 0.6rem 1.9rem;
+    border-radius: 2rem;
+    margin: 0 0.3rem;
+}
+
+.blog-html .site-content .page-num .page {
+    background: var(--bg-pac-blue);
+    color: var(--text-white);
+}
+
+.blog-html .site-content .page-num .page:hover {
+    background: var(--bg-flame);
+    color: var(--bg-dark);
+}
+/* xxx Content for Blogs xxx */
+
+/* --- Sidebar Termm & Popular Section   --- */
+
+/* Category(Term) List */
+.blog-html .site-content > .sidebar .category-list {
+    font-family: var(--Code);
+}
+
+.blog-html .site-content > .sidebar .category-list .list-items {
+    border: var(--bg-pac-blue) solid 1px;
+    background: var(--grad-dark);
+    padding: 0.4rem 1rem;
+    margin: 0.8rem 0;
+    border-radius: 3rem;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-html .site-content > .sidebar .category-list .list-items:hover {
+    border: 1px solid var(--bg-flame);
+}
+
+.blog-html .site-content > .sidebar .category-list .list-items a {
+    color: var(--text-white);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-html .site-content > .sidebar .category-list .list-items a:hover {
+    color: var(--bg-flame);
+}
+
+.blog-html .site-content > .sidebar .category-list .list-items span {
+    color: var(--text-mid-blue);
+}
+
+/* Popular List */
+.blog-html .sidebar .popular-post .post-content {
+    padding: 1rem 0;
+}
+
+.blog-html .site-content .sidebar .popular-post h2 {
+    padding-top: 6rem;
+}
+
+.blog-html .site-content .sidebar .popular-post .post-info {
+    padding: 0.4rem 0.1rem !important;
+    bottom: 0.7rem !important;
+    left: 1.7rem !important;
+    border-radius: 0rem !important;
+    background: var(--grad-blues) !important;
+}
+
+.blog-html .site-content .sidebar .popular-post .post-info span {
+    font-size: 0.8rem;
+}
+
+.blog-html .site-content .sidebar .popular-post .post-title a {
+    font-size: 1.2rem;
+}
+
+/* xxx Sidebar Term & Popular Section  xxx */
+
+/* -----XXX-------Main blog.html--------XXX------ */
+
+/* -------------Main secret.html--------------- */
+.secret-html .secret {
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.secret-html .secret h2 {
+    font-family: var(--Prompt);
+    color: var(--text-white);
+}
+
+.secret-html .secret .form-element {
+    padding: 1.7rem 0.7rem;
+}
+
+.secret-html .secret .input-element {
+    width: 26%;
+    height: 1rem;
+    padding: 0.3rem 0.7rem;
+    font-family: var(--Prompt);
+}
+
+.secret-html .secret .form-button {
+    border-radius: 0;
+    padding: 0.7rem 12%;
+    margin: 0.4rem 0;
+    background: var(--grad-blues);
+}
+
+/* -----XXX-----Main secret.html------XXX------ */
+
+/* ------------- Footer --------------- */
+
+footer.footer {
+    height: 100%;
+    background: var(--bg-jet);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+    color: var(--text-white);
+    font-family: var(--Prompt);
+}
+
+footer.footer .search-sites .input-element {
+    background: var(--bg-flame);
+    display: inline-block;
+}
+/* -----XXX----- Footer ------XXX------ */
 
 /* ---viewport less than or equal to 700px --- */
 
 @media only screen and (max-width: 700px) {
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column; 
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
     }
 
     .nav .toggle-collapse {
@@ -288,36 +524,30 @@ main.blog-html .owl-theme .owl-nav [class*='owl-']:hover {
 
 /* ---viewport less than or equal to 600px --- */
 
-
-/* ---- Scroll Bar ---- */
+/* ---- Side Window Scroll Bar ---- */
 
 /* width */
 ::-webkit-scrollbar {
     width: 0.8rem;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: var(--bg-dark);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--bg-jet);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:var(--bg-flame);
-  }
-  
-/* Scroll button  */
-  ::-webkit-scrollbar-button {
-    background: var(--bg-pac-blue);
-  }
+}
 
-  /* Scroll button  hover*/
-::-webkit-scrollbar-button:hover {
-    background: var(--text-mid-blue)
-  }
-  /* -xx- Scroll Bar -xx- */
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+    border-radius: 1rem;
+    margin: 1px 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-jet);
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-flame);
+    border-radius: 1rem;
+}
+
+/* -xx- Side Window Scroll Bar -xx- */

@@ -122,11 +122,17 @@ span {
     display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
+    margin-right: -10%;
 }
 
 .nav .toggle-collapse .toggle-icons i {
     font-size: 1.4rem;
     color: var(--text-white);
+}
+
+.nav .toggle-collapse .toggle-icons .fa-bars {
+    color: var(--text-white);
+    font-size: 1.5rem;
 }
 
 .collapse {
@@ -172,6 +178,7 @@ span {
 .nav .social i:hover {
     color: var(--bg-flame);
 }
+
 /* -----XXX-------Navigation--------XXX------ */
 
 /* ---------------Main index.html----------------- */
@@ -566,9 +573,27 @@ footer.footer .nav-up span:hover {
 
 /* -----XXX----- Footer ------XXX------ */
 
-/* ---viewport less than or equal to 700px --- */
+/* ---viewport less than or equal to 1400px --- */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1400px) {
+    .blog-html .post-content > .post-image .post-info {
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .blog-html .site-content .sidebar .popular-post .post-info {
+        display: none !important;
+    }
+
+    footer.footer .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* ---viewport less than or equal to 1200px --- */
+
+/* ---viewport less than or equal to 750px --- */
+@media only screen and (max-width: 850px) {
     .nav .nav-menu,
     .nav .nav-items {
         flex-direction: column;
@@ -576,6 +601,19 @@ footer.footer .nav-up span:hover {
 
     .nav .toggle-collapse {
         display: initial;
+    }
+
+    footer.footer .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main.blog-html .site-content {
+        grid-template-columns: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main.blog-html .site-content .sidebar .popular-post {
+        display: none;
     }
 }
 

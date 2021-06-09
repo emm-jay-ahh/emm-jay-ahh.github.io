@@ -18,7 +18,7 @@ body {
     --Prompt: "Prompt", sans-serif;
     --Code: "Source Code Pro", monospace;
 
-    /* theme colours */
+    /* colours */
     --text-white: #ede7e3;
     --text-mid-blue: #82c0cc;
     --bg-flame: #f05d23;
@@ -46,20 +46,23 @@ a {
 p {
     color: var(--text-white);
     font-family: var(--Prompt);
+    font-size: 1.05rem;
 }
 
 h1 {
     font-family: var(--Code);
-    font-size: 2.2rem;
+    font-size: 2.5rem;
+    color: var(--text-white);
 }
 
 h2 {
     text-decoration: none;
+    font-size: 1.7rem;
 }
 
 h3 {
     font-family: var(--Prompt);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .flex-row {
@@ -97,10 +100,9 @@ span {
 /* -----xxx-------Global Class--------xxx------ */
 
 /* ---------------Navigation----------------- */
-
 .nav {
     background: var(--bg-jet);
-    padding: 0 2rem;
+    padding: 0 1.7rem;
     padding-top: 0.7rem;
     height: 0rem;
     min-height: 8vh;
@@ -146,10 +148,11 @@ span {
 }
 
 .nav .nav-items .nav-link {
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    padding: 1.5rem 1rem;
+    font-size: 1.3rem;
     position: relative;
-    font-family: var(--Prompt);
+    font-family: var(--Code);
+    border-radius: 7%;
 }
 
 .nav .nav-items .nav-link:hover {
@@ -161,7 +164,7 @@ span {
 }
 .nav .nav-brand a {
     font-size: 1.9rem;
-    padding: 1.3rem 2rem;
+    padding: 1.3rem 1.7rem;
     display: block;
     font-family: var(--Code);
     color: var(--text-white);
@@ -173,7 +176,7 @@ span {
 
 .nav .social i {
     padding: 0 0.7rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .nav .social i:hover {
@@ -182,12 +185,13 @@ span {
 
 /* -----XXX-------Navigation--------XXX------ */
 
+/* UNDER CONTRUCTION */
 /* ---------------Header----------------- */
-
+/* 
 header.header .page-title {
     padding: 1rem 3rem;
     margin-left: 5rem;
-}
+} */
 /* -----XXX-------Header--------XXX------ */
 
 /* ---------------Main index.html----------------- */
@@ -211,8 +215,10 @@ h3 {
     margin: 0.3rem;
 }
 
+/* ccc about buttons */
 main.index-html .site-title .button {
     margin: 1.8rem;
+    padding: 1rem 1.5rem;
     background: var(--bg-pac-blue);
 }
 
@@ -221,20 +227,48 @@ main.index-html .site-title .button:hover {
     border: 1px solid var(--text-mid-blue);
     color: var(--text-white);
 }
-
-main.index-html .site-content {
-    margin: 0.5rem 5rem;
-    padding: 1rem 1rem;
+main.index-html section {
+    display: flex;
+    justify-content: center;
 }
 
+/* Div Container size */
+main.index-html .site-content div {
+    width: 65%;
+    margin: 2.5rem 10rem;
+    padding: 2rem 2rem;
+    border: var(--bg-pac-blue) solid 1px;
+}
+/* Visual Effects */
+main.index-html .site-content div:hover {
+    border: var(--bg-flame) solid 1px;
+}
+
+main.index-html .site-content div.image-section {
+    border: none;
+}
+
+/* Backgrounds for each sep div */
+main.index-html .site-content .code-section {
+    background: url(../images/coffee_80.jpg);
+}
+
+main.index-html .site-content .cloud-section {
+    background: url(../images/flame_80.jpg);
+}
+
+main.index-html .site-content .cyber-section {
+    background: url(../images/key_80.jpg);
+}
+/*  Fonts for page */
 main.index-html .site-content h2 {
-    font-family: var(--Code);
+    font-family: var(--Roboto);
     color: var(--text-white);
 }
 
 main.index-html .site-content p {
-    font-family: var(--Roboto);
-    font-size: 1.3rem;
+    font-family: var(--Code);
+    font-size: 1.2rem;
 }
 
 /* -----XXX-------Main index.html--------XXX------ */
@@ -250,6 +284,10 @@ main.bio-html .bio {
     height: 99vh;
     width: 100%;
     background-size: cover;
+}
+
+main.bio-html .bio .about-me {
+    text-align: center;
 }
 
 main.bio-html .bio .bio-post {
@@ -268,13 +306,22 @@ main.bio-html .bio-post .bio-content {
 }
 
 main.bio-html .bio-content .bio-title {
-    padding: 2rem 0;
+    padding: 2.7rem 0;
+    color: var(--text-white);
+    font-size: 1.2rem;
 }
 
 main.bio-html .bio-content .button-bio {
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 1.7rem;
     background: var(--grad-blues);
     margin: 0.5rem;
+    cursor: pointer;
+}
+
+main.bio-html .bio-content .button-bio:hover {
+    background: var(--bg-flame);
+    border: var(--bg-dark) solid 1px;
+    color: var(--text-white);
 }
 
 main.bio-html .bio-content span {
@@ -333,6 +380,7 @@ main.blog-html .site-content .post-content > .post-image .post-info {
     bottom: 0%;
     left: 20vw;
     border-radius: 3rem;
+    margin: 0 0.7rem;
 }
 
 main.blog-html .site-content .post-content > .post-image > div {
@@ -346,10 +394,6 @@ main.blog-html .site-content .post-content > .post-image .img {
 
 main.blog-html .site-content .post-content > .post-image .img:hover {
     transform: scale(1.2);
-}
-
-main.blog-html .site-content .post-content > .post-image .post-info {
-    margin: 0 0.7rem;
 }
 
 main.blog-html .post-content .post-title a {
@@ -397,9 +441,9 @@ main.blog-html .post-content .post-title a:hover {
 }
 /* xxx Content for Blogs xxx */
 
-/* --- Sidebar Termm & Popular Section   --- */
+/* --- Sidebar  & Popular Section   --- */
 
-/* Category(Term) List */
+/* Category List */
 .blog-html .site-content > .sidebar .category-list {
     font-family: var(--Code);
 }
@@ -407,9 +451,9 @@ main.blog-html .post-content .post-title a:hover {
 .blog-html .site-content > .sidebar .category-list .list-items {
     border: var(--bg-pac-blue) solid 1px;
     background: var(--grad-dark);
-    padding: 0.4rem 1rem;
+    padding: 0.7rem 1rem;
     margin: 0.8rem 0;
-    border-radius: 3rem;
+    border-radius: 1rem;
     width: 65%;
     display: flex;
     justify-content: space-between;
@@ -442,6 +486,7 @@ main.blog-html .post-content .post-title a:hover {
 
 .blog-html .site-content .sidebar .popular-post h2 {
     padding-top: 6rem;
+    font-family: var(--Prompt);
 }
 
 .blog-html .site-content .sidebar .popular-post .post-info {
@@ -485,7 +530,14 @@ main.blog-html .post-content .post-title a:hover {
     padding: 1.7rem 0.7rem;
 }
 
-.secret-html .secret .input-element {
+.secret-html .secret .form-element p {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    padding-left: 2rem;
+}
+
+/* INPUT and BUTTON -  OFF FOR NOW */
+/* .secret-html .secret .input-element {
     width: 26%;
     height: 1rem;
     padding: 0.3rem 0.7rem;
@@ -497,7 +549,7 @@ main.blog-html .post-content .post-title a:hover {
     padding: 0.7rem 12%;
     margin: 0.4rem 0;
     background: var(--grad-blues);
-}
+} */
 
 /* -----XXX-----Main secret.html------XXX------ */
 
@@ -525,6 +577,7 @@ footer.footer .container h2 {
     font-family: var(--Prompt);
 }
 
+/* Search Reddit and DuckDuckGo */
 footer.footer .search-sites .input-element {
     display: inline-block;
     padding: 0.5rem 0.7rem;
@@ -549,6 +602,9 @@ footer.footer .search-sites span {
     cursor: pointer;
 }
 
+/* Other Resources - NOT USED CURRENTLY */
+
+/* Follow Me */
 footer.footer .follow {
     display: flexbox;
     flex-direction: column;
@@ -565,15 +621,17 @@ footer.footer .follow div i:hover {
     cursor: pointer;
 }
 
+/* Copyright */
 footer.footer .copyright {
     font-family: var(--Roboto);
     font-size: 1rem;
     justify-content: center;
 }
 
+/* Nav button to return to top */
 footer.footer .nav-up {
     position: absolute;
-    right: 6%;
+    right: 3%;
     top: 40%;
 }
 
@@ -591,6 +649,12 @@ footer.footer .nav-up span:hover {
 /* ---viewport less than or equal to 1400px --- */
 
 @media only screen and (max-width: 1400px) {
+    main.index-html .site-content div {
+        width: 75%;
+        margin: 2.5rem 1rem;
+        padding: 1.3rem 1.3rem;
+    }
+
     .blog-html .post-content > .post-image .post-info {
         left: 2rem !important;
         bottom: 1.2rem !important;
@@ -618,6 +682,27 @@ footer.footer .nav-up span:hover {
         display: initial;
     }
 
+    main.index-html .site-title div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main.index-html .site-title .button {
+        margin: 1.5rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    main.index-html .site-content div {
+        width: 85%;
+        margin: 2.5rem 1rem;
+        padding: 1.3rem 1.3rem;
+    }
+    main.index-html .site-content h2 {
+        font-size: 1.4rem;
+    }
+    main.index-html .site-content p {
+        font-size: 1rem;
+    }
     main.blog-html .site-content {
         grid-template-columns: 100%;
         display: flex;
@@ -646,8 +731,20 @@ footer.footer .nav-up span:hover {
 
 /* ---viewport less than or equal to 450px --- */
 @media only screen and (max-width: 450px) {
+    main.index-html .site-content h2 {
+        font-size: 1.2rem;
+    }
+    main.index-html .site-content p {
+        font-size: 0.9rem;
+    }
+
     main .bio {
         height: 100vh;
+    }
+
+    main.blog-html .site-content .post-content > .post-image .post-info {
+        padding: 0.5rem;
+        margin: 0 0.5rem;
     }
 
     footer.footer .copyright {
@@ -657,16 +754,23 @@ footer.footer .nav-up span:hover {
 
 /* ---viewport less than or equal to 450px --- */
 
-/* ---- Side Window Scroll Bar ---- */ /* width */
+@media only screen and (max-width: 320px) {
+    .nav {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* ---- Side Window Scroll Bar ---- */
+
+/* width */
 ::-webkit-scrollbar {
-    width: 0.8rem;
+    width: 1rem;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
     background: var(--bg-dark);
-    border-radius: 1rem;
-    margin: 1px 3px;
 }
 
 /* Handle */
@@ -679,6 +783,10 @@ footer.footer .nav-up span:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--bg-flame);
     border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: var(--bg-dark);
 }
 
 /* -xx- Side Window Scroll Bar -xx- */

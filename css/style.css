@@ -685,6 +685,7 @@ footer.footer .nav-up span:hover {
     main.index-html .site-title div {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
     }
 
     main.index-html .site-title .button {
@@ -719,12 +720,6 @@ footer.footer .nav-up span:hover {
     footer.footer .copyright {
         font-size: 0.8rem;
     }
-    .nav .nav-brand a {
-        font-size: 1.7rem;
-    }
-    .nav {
-        min-height: 9vh;
-    }
 }
 
 /* ---viewport less than or equal to 850px --- */
@@ -740,6 +735,14 @@ footer.footer .nav-up span:hover {
 
     main .bio {
         height: 100vh;
+    }
+
+    .bio-html .bio h3 {
+        font-size: 1rem;
+    }
+
+    .bio-html .bio p {
+        font-size: 0.8rem;
     }
 
     main.blog-html .site-content .post-content > .post-image .post-info {

@@ -100,6 +100,8 @@ span {
 /* -----xxx-------Global Class--------xxx------ */
 
 /* ---------------Navigation----------------- */
+
+/* nav bar properties */
 .nav {
     background: var(--bg-jet);
     padding: 0 1.7rem;
@@ -113,6 +115,7 @@ span {
     justify-content: space-between;
 }
 
+/* collapsed nav components */
 .nav .toggle-collapse {
     position: absolute;
     top: 0%;
@@ -121,6 +124,7 @@ span {
     display: none;
 }
 
+/* icons display - collapsed nav*/
 .nav .toggle-collapse .toggle-icons {
     display: flex;
     justify-content: flex-end;
@@ -128,11 +132,13 @@ span {
     margin-right: -10%;
 }
 
+/* icons size - collapsed nav */
 .nav .toggle-collapse .toggle-icons i {
     font-size: 1.4rem;
     color: var(--text-white);
 }
 
+/* burger menu bar - collapsed nav */
 .nav .toggle-collapse .toggle-icons .fa-bars {
     color: var(--text-white);
     font-size: 1.5rem;
@@ -142,6 +148,7 @@ span {
     height: 30rem;
 }
 
+/* main nav items properties */
 .nav .nav-items {
     display: flex;
     margin: 0;
@@ -162,6 +169,8 @@ span {
 .nav .nav-items .nav-link:hover a {
     color: var(--grad-dark);
 }
+
+/* nav title (brand) */
 .nav .nav-brand a {
     font-size: 1.9rem;
     padding: 1.3rem 1.7rem;
@@ -170,6 +179,7 @@ span {
     color: var(--text-white);
 }
 
+/* nav socials properties */
 .nav .social {
     padding: 1.7rem 2rem;
 }
@@ -185,7 +195,7 @@ span {
 
 /* -----XXX-------Navigation--------XXX------ */
 
-/* UNDER CONTRUCTION */
+/* UNDER CONTRUCTION SITE HEADER MAYBE??? FOR QUOTES*/
 /* ---------------Header----------------- */
 /* 
 header.header .page-title {
@@ -196,6 +206,7 @@ header.header .page-title {
 
 /* ---------------Main index.html----------------- */
 
+/* title background container and properties */
 main.index-html .site-title {
     background: url(../images/cyber.jpeg);
     background-size: cover;
@@ -215,7 +226,7 @@ h3 {
     margin: 0.3rem;
 }
 
-/* ccc about buttons */
+/* ccc + about buttons */
 main.index-html .site-title .button {
     margin: 1.8rem;
     padding: 1rem 1.5rem;
@@ -239,6 +250,7 @@ main.index-html .site-content div {
     padding: 2rem 2rem;
     border: var(--bg-pac-blue) solid 1px;
 }
+
 /* Visual Effects */
 main.index-html .site-content div:hover {
     border: var(--bg-flame) solid 1px;
@@ -248,7 +260,7 @@ main.index-html .site-content div.image-section {
     border: none;
 }
 
-/* Backgrounds for each sep div */
+/* Backgrounds for each  div */
 main.index-html .site-content .code-section {
     background: url(../images/coffee_80.jpg);
 }
@@ -277,11 +289,12 @@ main.index-html .site-content p {
 
 /* --- Carousel/Gallery --- */
 
+/* title background container properties */
 main.bio-html .bio {
     background: url(../images/tie_75_tran.png);
     background-repeat: no-repeat;
     background-position: center;
-    height: 99vh;
+    height: 110vh;
     width: 100%;
     background-size: cover;
 }
@@ -290,34 +303,35 @@ main.bio-html .bio .about-me {
     text-align: center;
 }
 
+/* Owl Carousel Proeperties ----------  */
 main.bio-html .bio .bio-post {
     padding-top: 11rem;
 }
-
+/*  display  of each gallery item*/
 main.bio-html .bio-post .bio-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 60%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
     border: solid 1px var(--bg-flame);
     background: rgba(255, 255, 255, 0.4);
 }
-
+/* title */
 main.bio-html .bio-content .bio-title {
     padding: 2.7rem 0;
     color: var(--text-white);
     font-size: 1.2rem;
 }
-
+/* button link/downloads */
 main.bio-html .bio-content .button-bio {
     padding: 0.7rem 1.7rem;
     background: var(--grad-blues);
     margin: 0.5rem;
     cursor: pointer;
 }
-
+/* effects */
 main.bio-html .bio-content .button-bio:hover {
     background: var(--bg-flame);
     border: var(--bg-dark) solid 1px;
@@ -341,9 +355,9 @@ main.bio-html .owl-nav .owl-prev .owl-nav-prev,
 main.bio-html .owl-nav .owl-next .owl-nav-next {
     color: var(--bg-pac-blue);
     background: transparent;
-    font-size: 3rem;
+    font-size: 3.7rem;
 }
-
+/* Visual effects */
 main.bio-html .owl-theme .owl-nav [class*="owl-"]:hover {
     background: transparent;
     color: var(--bg-flame);
@@ -357,6 +371,7 @@ main.bio-html .owl-theme .owl-nav [class*="owl-"] {
 
 /* ---------------Main blog.html----------------- */
 
+/* display properties of main layout */
 main.blog-html .site-content {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -405,8 +420,11 @@ main.blog-html .post-content .post-title a:hover {
     color: var(--bg-flame);
 }
 
-/*  -- Read More Button -- */
-.blog-html .site-content .post-content .post-title .post-button {
+/* NOT CURRENTLTY IN USE  */
+/* WANT TO FILL WITH MY OWN CONTENT BEFORE OPERATING */
+
+/*  -- Read More Button   -- */
+/* .blog-html .site-content .post-content .post-title .post-button {
     border-radius: 0;
     padding: 0.5rem 0.8rem;
     background: var(--bg-pac-blue);
@@ -416,8 +434,12 @@ main.blog-html .post-content .post-title a:hover {
     color: var(--bg-dark);
     background: var(--bg-flame);
     border-color: var(--bg-pac-blue);
-}
+} */
 
+/* CURRENTLY JUST ONE PAGE IN USE  */
+/* NEED TO ADD MY CONTENT AND THEN ADD MORE PAGES */
+
+/* Blog page nav display properties */
 .blog-html .site-content .page-num {
     justify-content: center;
     color: var(--text-white);
@@ -430,6 +452,7 @@ main.blog-html .post-content .post-title a:hover {
     margin: 0 0.3rem;
 }
 
+/* & visuals  */
 .blog-html .site-content .page-num .page {
     background: var(--bg-pac-blue);
     color: var(--text-white);
@@ -441,9 +464,10 @@ main.blog-html .post-content .post-title a:hover {
 }
 /* xxx Content for Blogs xxx */
 
-/* --- Sidebar  & Popular Section   --- */
+/* ---   Sidebar & Popular Section     --- */
 
-/* Category List */
+/* Blog Category/Nav List  */
+
 .blog-html .site-content > .sidebar .category-list {
     font-family: var(--Code);
 }
@@ -536,7 +560,8 @@ main.blog-html .post-content .post-title a:hover {
     padding-left: 2rem;
 }
 
-/* INPUT and BUTTON -  OFF FOR NOW */
+/* FORM INPUT and BUTTON -  UNDER CONSTRUCTION */
+
 /* .secret-html .secret .input-element {
     width: 26%;
     height: 1rem;
@@ -555,6 +580,7 @@ main.blog-html .post-content .post-title a:hover {
 
 /* ------------- Footer --------------- */
 
+/* footer display properties */
 footer.footer {
     height: 100%;
     background: var(--bg-jet);
@@ -576,6 +602,7 @@ footer.footer .container h2 {
     color: var(--text-white);
     font-family: var(--Prompt);
 }
+/* Mission - None of my content yet */
 
 /* Search Reddit and DuckDuckGo */
 footer.footer .search-sites .input-element {

@@ -2,35 +2,84 @@
 
 ## <cyber_eemjay>
 
+<br />
+<br />
+
 ### General Information
 
-#### URL - GitHub Pages
+<br />
 
-> GitHub Pages: [GitHub] https://emm-jay-ahh.github.io/index.html
+#### GitHub Pages:
 
-#### URL - GitHub Reposistory
+> [GitHubPages](https://emm-jay-ahh.github.io/)
 
-> Repository: [GitHub] https://github.com/emm-jay-ahh/portfolio_t1a2
+#### GitHub Reposistory:
+
+> [GitHub](https://github.com/emm-jay-ahh/portfolio_t1a2)
+
+<br />
+<br />
 
 ### About
 
-#### Purpose
+<br />
 
-I have desinged this website to be able to track and blog my journey through an intensive Code, Cloud and Cyber Bootcamp.
+#### Purpose:
 
-I want to highlight the skills and knowledge I obtain and also showcase what I can do.
+I have desinged this website to be able to track and blog my journey through an intensive Code, Cloud & Cyber Bootcamp.<br />
+As I grow in skill and knowledge, I plan to share by show-casing what I can do with these new powers.<br />
+All in the name of fun...
 
-#### Features
+<br />
 
-    1. home (index.html)
-        - Main page - general information code, cloud, cyber
-            - Shared Nav, Header and Footer with other pages
-                - Nav bar can collapse for smaller screens
+#### Functionality / Features:
+
+<br />
+
+Utlising four main pages
+
+    1. home (index.html):
+        * CONTENT:
+            * anchor/buttons (section-title)
+                * jump to below data page
+            * data (main site-content)
+                * code
+                * cloud
+                * cyber
+                * about
+        * DISPLAY:
+            * flexbox
+                * anchors/buttons - row/col switch
+            * imgs
+                * hacking inspired images
+
+
+
+        * FEATURE:
+        * NAVFOOT: Shared across all pages (see 5)
+
+
+
+        * CONTENT:
+        * DISPLAY:
+        * FEATURE:
+        * NAVFOOT: (see 5)
+
+
+            *
+
+
+          information code, cloud, cyber
+            - S
+                - Nav Bar collapse - screen response
                 - Footer collapses from 4 to 2 to 1 columns
                     - Contents: our mission, search reddit or duckduckgo, other resources and follow me + nav back to top button
             - Unique Header "quote" per page
             - Contains general informationa bout Code, Cloud and Cyber
                 - Responsive for different screen size
+
+
+
 
     2. bios (/pages/bio.html)
         * Bio page - information about me
@@ -63,6 +112,12 @@ I want to highlight the skills and knowledge I obtain and also showcase what I c
                     * to showcase skills I gain
                     * to test my abilities
                     * to flex my creativity
+
+
+
+    5. SHARED ACROSS ALL PAGES
+        * NAV:
+        * FOOTER:
 
 #### Sitemap
 

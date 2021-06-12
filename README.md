@@ -202,27 +202,41 @@ Utlising four main pages with Shared Nav and Footer
 
 <br />
 
-#### Sitemap
+#### Sitemap:
 
-(https://)
+![Sitemap](https://emm-jay-ahh.github.io/images/sitemap.png)
 
-#### Screenshots
+<br />
 
-#### Audience
+#### Screenshots:
+
+<br />
+
+![Mobile](https://emm-jay-ahh.github.io/images/Phone_Bio.jpg)
+![Tablet](https://emm-jay-ahh.github.io/images/Tablet_Bio.jpg)
+![Desktop](https://emm-jay-ahh.github.io/images/Desktop_Bio.jpg)
+
+<br />
+
+#### Audience:
+
+<br />
 
 Will be themed and geared towards the hacker types - focus areas are cyber-security, offensive security etc.
 
-#### Stack
+<br />
 
-    I have used the following technologies
+#### Stack:
 
+<br />
+
+Using the following technologies
 
     1.  HTML5
 
     2.  CSS
             * Flexbox
             * Grid
-
     3.  JavaScript
             * jQuery
             * Owl Carousel

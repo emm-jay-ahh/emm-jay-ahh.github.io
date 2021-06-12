@@ -212,9 +212,23 @@ Utlising four main pages with Shared Nav and Footer
 
 <br />
 
+Mobile:
+
 ![Mobile](https://emm-jay-ahh.github.io/images/Phone_Home.jpg)
+
+<br />
+
+Tablet:
+
 ![Tablet](https://emm-jay-ahh.github.io/images/Tablet_Home.jpg)
+
+<br />
+
+Desktop:
+
 ![Desktop](https://emm-jay-ahh.github.io/images/Desktop_Home.jpg)
+
+<br />
 
 <br />
 

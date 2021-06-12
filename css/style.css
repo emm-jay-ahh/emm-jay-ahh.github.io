@@ -307,7 +307,7 @@ main.bio-html .bio .about-me {
 main.bio-html .bio .bio-post {
     padding-top: 11rem;
 }
-/*  display  of each gallery item*/
+/*  display gallery item*/
 main.bio-html .bio-post .bio-content {
     display: flex;
     flex-direction: column;

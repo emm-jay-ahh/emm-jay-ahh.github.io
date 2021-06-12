@@ -11,11 +11,15 @@
 
 #### GitHub Pages:
 
-> [GitHubPages](https://emm-jay-ahh.github.io/)
+[GitHub Pages](https://emm-jay-ahh.github.io/)
 
 #### GitHub Reposistory:
 
-> [GitHub](https://github.com/emm-jay-ahh/portfolio_t1a2)
+[Portfolio Repo](https://github.com/emm-jay-ahh/portfolio_t1a2)
+
+### GitHub Home
+
+[GitHub](https://github.com/emm-jay-ahh)
 
 <br />
 <br />
@@ -25,6 +29,8 @@
 <br />
 
 #### Purpose:
+
+<br />
 
 I have desinged this website to be able to track and blog my journey through an intensive Code, Cloud & Cyber Bootcamp.<br />
 As I grow in skill and knowledge, I plan to share by show-casing what I can do with these new powers.<br />
@@ -36,90 +42,169 @@ All in the name of fun...
 
 <br />
 
-Utlising four main pages
+Utlising four main pages with Shared Nav and Footer
 
-    1. home (index.html):
+    1. home (index.html):   landing
+
         * CONTENT:
-            * anchor/buttons (section-title)
+            * buttons anchors (section-title)
                 * jump to below data page
             * data (main site-content)
                 * code
                 * cloud
                 * cyber
                 * about
+
         * DISPLAY:
             * flexbox
-                * anchors/buttons - row/col switch
+                * buttons anchors - row/col switch (resp.)
             * imgs
-                * hacking inspired images
-
-
+                * hacking inspired images - accesible
 
         * FEATURE:
-        * NAVFOOT: Shared across all pages (see 5)
+            * No major features
+            * Simple layout
+            * Responive (resp.) across most screen sizes
 
+        * NAVFOOT:
+            * Shared on all Pages
+            * See 5. for details
 
+<br />
 
-        * CONTENT:
+    2. bios (/pages/bio.html) professional
+
+        * CONTENT: Using a Carousel/Gallery - containing links to my CV, Socials & GitHub
+            *Backgroud img
+            * Intro
+                * Name + welcome
+                * img
+            * Career
+                * Resume Download.
+                * img
+            * Project
+                * GitHub Link
+                * img
+            * Socials
+                * LinkedIn Profile Link
+                * img
+            * FILLER #1 & #2
+                * Filler used to show carousel navigation in action
+                * imgs
+
         * DISPLAY:
+            * Carousel/Gallery (owl carousel)
+                * left right toggle
+                * animated nav scrolling
+                * flexbox
+                * resp.
+
         * FEATURE:
-        * NAVFOOT: (see 5)
+            * Can add more or less carousel items with ease
+            * Using JS and jQuery to get operational
 
+        NAVFOOT:
+            * Shared - (see 5.)
 
-            *
-
-
-          information code, cloud, cyber
-            - S
-                - Nav Bar collapse - screen response
-                - Footer collapses from 4 to 2 to 1 columns
-                    - Contents: our mission, search reddit or duckduckgo, other resources and follow me + nav back to top button
-            - Unique Header "quote" per page
-            - Contains general informationa bout Code, Cloud and Cyber
-                - Responsive for different screen size
-
-
-
-
-    2. bios (/pages/bio.html)
-        * Bio page - information about me
-            * Shared Nav, Header and Footer with other pages - see above
-            * Unique Header "quote" per page
-            * Using a Carousel/Gallery - containing links to my CV, Socials & GitHub
-                * Responsive for different screens sizes
-                * Jquery used for some functionality - scroll gallery
-                * Easy to manage and to add to as needed
+<br />
 
     3. blog (/pages/blog.html)
-        * Blog page - where I will track my journey
-            * Shared Nav, Header and Footer with other pages
-            * Unique Header "quote" per page
-            * Blog post & Sidebar used
-                * Using a grid-template 70% / 30%
-                * Sidebar is used for navigation of blog posts seperated by term#, assignments and other
-                    * Visible not Operational - will require more content
-                * Will contain max 5 blog entries per page and max of three popular post
-                * Responsive for different screen size
-                    * Sidebar nav is pushed to top of screen and the popular post will disappear on small displays
 
-    4. .sec (/pages/secret.html)
-        * Secret page - here I will add puzzle ctf type challenges for others
-            * Shared Nav, Header and Footer with other pages
-            * Unique Header "quote" per page
-            * Find the secret - page quotes are hints
-                * 1st secret - hint: "Please hold all comments to yourself"
-                * As I skill-up through the bootcamp I will add additional secrets/challenges
-                    * to showcase skills I gain
-                    * to test my abilities
-                    * to flex my creativity
+        * CONTENT: Blog page for keeping track of studies
+            * Blogs
+                * Linux
+                * Git
+                * HTML
+                * CSS
+                * WebDev
+            * Sidebar
+                * Blog Nav
+                * Popular Post section
+
+        * DISPLAY:
+            * Grid Template Column 70% / 30%
+            * 5 blogs per page
+            * 3 popular post
+            * Sidebar (flexbox)
+            * resp.
+
+        FEATURE:
+            * imgs have zoom or pop effect on hover
+            * Sidebar with blog navigation and popular post section
+            * page navigation
+            * future will add term_02, term_03, term_04
+
+        NAVFOOT:
+            *Shared - (see 5.)
+
+<br />
+
+    4. .sec (/pages/secret.html) Challenges (more to come)
+
+        * CONTENT: Puzzles, CTF type challenges for others to have fun with
+            * Easy CTF (find the secret) - 1st but only challenge so far
+            * Hidden About me       (source)
+            * Hidden Email          (source)
+            * Hidden secret         (source)
+
+        * DISPLAY:
+            * img
+            * Simple
+            * resp.
 
 
+        * FEATURE:
+            * No major feature yet for this page
 
-    5. SHARED ACROSS ALL PAGES
+        *EXTRA: As I skill-up through the bootcamp I will add additional secrets/challenges
+            * to showcase skills I gain
+            * to test my abilities
+            * to flex my creativity
+
+        * NAVFOOT:
+            *Shared - (see 5.)
+
+<br />
+
+    5. NAVFOOT (SHARED ACROSS ALL PAGES)
         * NAV:
+            * Navigate the four main pages
+                * home
+                * bios
+                * blog
+                * .sec
+            * Quick Socials links
+                * Github
+                * LinkedIn
+                * Youtube   (Not using my channel yet)
+            * Responsive
+            * Collapsable Nav Menu (below 800px)
+                * JS used
+                * Burger Button appears
+
         * FOOTER:
+            * Addtional Info
+                * Mission
+                * Quick Search
+                    * Reddit
+                    * DuckDuckGo
+                * Resources
+                    * Not in use yet
+                * Follow Me Socials
+                    * Github
+                    * LinkedIn
+                    * Youtube   (Not using my channel yet)
+            * Responsive
+            * Grid template column 25% each
+                * Desktop 4 x 1 layout
+                * Tablet  2 x Layout
+                * Phone   1 x 4
+
+<br />
 
 #### Sitemap
+
+(https://)
 
 #### Screenshots
 
